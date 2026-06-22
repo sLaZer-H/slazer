@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sLaZer's Profiles</title>
+    <style>
+        :root {
+            --bg-color: #0f0c1b;
+            --card-bg: rgba(25, 20, 40, 0.6);
+            --accent-color: #7249fa;
+            --text-color: #ffffff;
+            --text-muted: #b9b6cd;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-image: radial-gradient(circle at top right, rgba(114, 73, 250, 0.15), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(0, 242, 254, 0.05), transparent 40%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(114, 73, 250, 0.4);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .subtitle span {
+            display: block;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(114, 73, 250, 0.3);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="profile-img" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400" alt="sLaZer">
+        
+        <h1>sLaZer</h1>
+        
+        <div class="subtitle">
+            <span>Player RL 🎮</span>
+            <span>Dev &gt;_ 💻</span>
+        </div>
+
+        <div class="links-container">
+            <a href="https://www.instagram.com/h.hassen__?igsh=MTR2bXVwdDZjdnVzeA==" target="_blank" class="btn">Instagram</a>
+            <a href="https://www.tiktok.com/@slazer.1?_r=1&_t=ZS-94rQhprbLTc" target="_blank" class="btn">TikTok</a>
+            <a href="#" class="btn">Epic Games: sLaZer.rl</a>
+            <a href="#" class="btn">PayPal: Hamoudi Hassen</a>
+            <a href="#" class="btn">Discord: @slazer0.</a>
+            <a href="https://discord.gg/7esc7ubrPj" target="_blank" class="btn">Discord Server</a>
+            <a href="https://www.youtube.com/@sLaZer-H" target="_blank" class="btn">YouTube</a>
+            <a href="https://github.com/sLaZer-H" target="_blank" class="btn">GitHub</a>
+        </div>
+
+        <div class="footer">
+            <p>صُنع بواسطة <a href="https://github.com/sLaZer-H" target="_blank">sLaZer</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
